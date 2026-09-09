@@ -1,0 +1,30 @@
+/* ejercicio 1 */
+h1,
+h3 {
+    color: red;
+}
+
+/* ejercicio 2 */
+* {
+    color: greenyellow;
+}
+
+/* ejercicio 3 */
+h1,
+p {
+    background-color: yellow;
+}
+
+/* ejercicio 4 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: blue;
+}
+
+/* ejercicio 5 */
+
+#hover:hover {color: cyan;}
