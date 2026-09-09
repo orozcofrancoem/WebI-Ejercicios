@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <style>
+        /* p porque quiero que lo haga solo en párrafos
+        .importante porque quiero que sea solamente a los que pertenezcan a esa clase
+        ::first-letter (pseudoelemento) porque SOLAMENTE quiero la primer letra. */
+        p.importante::first-letter {
+            color: red;
+            size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+Realice un estilo que permita cambiar el aspecto de la primera letra de un párrafo.
+Utilice clases para poder separar los párrafos a los que no queremos que se le aplique el
+estilo. 
+-->
+    <p class="importante">Primer párrafo</p> <!-- al que quiero cambiar, le agrego a la clase importante-->
+    <p class="no-importante">Segundo párrafo</p>
+    <p class="no-importante">Tercer párrafo</p>
+</body>
+
+</html>

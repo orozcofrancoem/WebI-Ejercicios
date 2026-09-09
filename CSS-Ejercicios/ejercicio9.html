@@ -5,10 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicio 9</title>
+
+    <style>
+        table {
+            border-style: double; /* estilo de borde*/
+            background-color: darkgray; /* color de fondo*/
+            border-spacing: 12px; /* espacio entre la tabla y las celdas*/
+        }
+
+        th {
+            border-style: solid; 
+            border-width: 1px; /* ancho del borde*/
+            background-color: aquamarine; 
+            border-spacing: inherit; /* inherit es porque utilizo herencia. la heredo de Table.*/ 
+        }
+
+        td {
+            border-style: inset;
+            border-width: 2px;
+            background-color: orange;
+            border-spacing: inherit;
+            padding: 4px; /* el padding es el espacio entre el borde de la celda y su contenido.*/
+        }
+    </style>
 </head>
 
 <body>
-<!-- 9.- Definir un estilo para aplicar a tablas. Se piden diferentes valores para el estilo del borde;
+    <!-- 9.- Definir un estilo para aplicar a tablas. Se piden diferentes valores para el estilo del borde;
 en concreto, se tiene doble trazo para el borde de la tabla, uno sólido para los encabezados
 y otro de bajo relieve para las celdas normales. También se solicita un color de fondo
 diferente para cada elemento: los encabezados con un azul verdoso, las celdas con naranja
@@ -18,5 +41,28 @@ declaración border-spacing:12px; ubicada en el selector table. Esta declaració
 heredarán las celdas también. Por último la declaración padding:4px; en el selector td para
 dejar un margen entre el borde de las celdas y su contenido.-->
 </body>
+
+<!-- 1. Creo una tabla
+ 2. thead para la sección de los encabezados, th para cada título de encabezado.
+ 3. tbody para la sección del cuerpo, tr para separar cada fila. 
+ 4. td para un dato cualquiera de la fila
+ -->
+<table>
+    <thead>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Franco</td>
+            <td>Orozco</td>
+        </tr>
+        <tr>
+            <td>Romina</td>
+            <td>Garay</td>
+        </tr>
+    </tbody>
+</table>
 
 </html>
