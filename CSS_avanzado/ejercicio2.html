@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        .tres-img {
+            /* para hacer que un div sea FlexBox tengo que poner si o si
+            el display: flex */
+            display: flex;
+
+            /* Alinea los elementos flexibles cuando no utilizan todo el espacio disponible en el eje principal (horizontalmente). */
+            justify-content: center;
+
+            /* Alinea los elementos flexibles cuando no utilizan todo el espacio disponible en el eje transversal (verticalmente). */
+            align-items: center;
+
+            /* el gap sirve para dar espacio entre elementos*/
+            gap: 15px;
+        }
+
+        .tres-img img {
+            /* le doy un ancho fijo a cada imagen*/
+            width: 200px;
+
+            /* alto fijo*/
+            height: 200px;
+
+            /* Asegura que la imagen recorte sus bordes sobrantes para rellenar la caja de 200x200 px sin deformarse ni estirarse.*/
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tres-img">
+        <img src="images/img1.jpg" alt="imagen1">
+        <img src="images/img2.jpg" alt="imagen2">
+        <img src="images/img3.jpg" alt="imagen3">
+    </div>
+</body>
+
+</html>

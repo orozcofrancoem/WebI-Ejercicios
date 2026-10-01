@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2</title>
+    <!-- Realice un formulario que contenga Nombre, Apellido, Sexo, Fecha de nacimiento y mail. 
+Luego realice las validaciones para cada uno de los campos. Que tenga un aspecto 
+similar al siguiente:  -->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        form {
+            background-color: lightcoral;
+            width: 380px;
+            border-radius: 25px;
+            border: 2px solid black;
+            box-shadow: 10px 10px 0px black;
+
+            /* para hacer la grilla de 2 columnas */
+            display: grid;
+            /* separa el formulario en dos columnas */
+            grid-template-columns: auto 1fr;
+            /* espaciado entre los elementos */
+            gap: 15px 10px;
+            /* espaciado interno para que el contenido no pegue contra los bordes*/
+            padding: 25px;
+            align-items: center;
+        }
+
+        label {
+            /* texto en negrita */
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input,
+        select {
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            width: 100%;
+            box-sizing: bor;
+
+        }
+
+        button {
+            /* hace que el botón ocupe las dos columnas de la grilla*/
+            grid-column: span 2;
+            /* centra el botón horizontalmente */
+            justify-self: center;
+            box-shadow: 4px 4px 0px black;
+        }
+    </style>
+</head>
+
+<body>
+    <FORM action="" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre" required>
+
+        <label for="lastName">Apellido</label>
+        <input type="text" required>
+
+        <label for="sex">Sexo</label>
+        <select name="sex" id="sex" required>
+            <option value="man">Hombre</option>
+            <option value="woman">Mujer</option>
+            <option value="other">Otro</option>
+        </select>
+
+        <label for="fNacimiento">Fecha de Nacimiento</label>
+        <input type="date" required>
+
+        <label for="mail">Correo Electrónico</label>
+        <input type="email" required>
+
+        <input type="submit">
+    </FORM>
+</body>
+
+</html>
